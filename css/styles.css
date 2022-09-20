@@ -184,15 +184,16 @@
 .portfolio-card {
     position: relative; 
     margin: 0 1rem 1.85rem;
-    max-width: 255px; 
+    max-width: 375px; 
 }
 
 .card-body img {
     width: 100%; 
-    height: 255px; 
-    object-fit: cover; 
+    /* height: 255px;  */
+    /* object-fit: cover;  */
     border-radius: 8px; 
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
+    box-shadow: 0 5px 5px #6b6b6b;
 }
 
 .card-popup-box {
@@ -201,7 +202,7 @@
     left: 20px; 
     right: 20px; 
     transition: 0.4s; 
-    z-index: a; 
+    background: rgba(240, 240, 240, .8);
     opacity: 0; 
     padding: 1.25rem 1.875rem;
 }
