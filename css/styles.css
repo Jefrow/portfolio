@@ -463,7 +463,7 @@
     transition-delay: 0.2s;
 }
 
-[data-animation = "slideInOUtTop"] .modal-dialog {
+[data-animation = "slideInOutTop"] .modal-dialog {
     transform: translateY(-100%);
 }
 
