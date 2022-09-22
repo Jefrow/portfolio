@@ -191,7 +191,7 @@
 .card-body img {
     width: 100%; 
     border-radius: 8px; 
-    box-shadow: 0 5px 5px #6b6b6b;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.125);
 }
 
 .card-popup-box {
@@ -200,10 +200,11 @@
     left: 20px; 
     right: 20px; 
     transition: 0.4s; 
-    background: rgba(240, 240, 240, .8);
+    background: var(--bg);
     opacity: 0; 
     padding: 1.25rem 1.875rem;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
 }
 
 .car-popup-box:before {
@@ -281,8 +282,8 @@
 }
 
 .main-menu .nav-items {
-    padding: 18px; 
-    font-size: 15px;
+    padding: 10px; 
+    font-size: 18px;
     line-height: 26px;  
     line-height: pointer; 
     text-transform: lowercase; 
@@ -355,21 +356,27 @@
     opacity: 1; 
 }
 
-.modal-body {
-    display: flex; 
-    align-items: center; 
-}
-
 .modal-body .image-wrapper {
-    max-width: 200px; 
-    margin-right: 0.75rem;
+    max-width: 385px; 
+    margin: 0.75rem auto;
 }
 
 .modal-body .image-wrapper img {
-    width: 200px; 
+    width: 385px; 
     border-radius: 8px; 
     object-fit: cover;
-    height: 200px; 
+    box-shadow:0 0 10px rgba(26, 26, 26, 0.75);
+}
+
+.link-btn {
+    text-align: center; 
+}
+
+.link-btn a {
+    padding: 10px 15px; 
+    border-radius: 25px; 
+    color: #fff;
+    background-color: #495fef;
 }
 
 [data-animation = "zoomInOut"].full-site-modal {
