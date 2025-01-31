@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/theme.css">
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/pages.css">
-  <script src="https://kit.fontawesome.com/8197eb53f0.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pages.css" />
+    <script
+      src="https://kit.fontawesome.com/8197eb53f0.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <title>Work Portfolio</title>
-</head>
-<body>
-  <div class="theme-panel">
-    <div class="theme-body">
-      <span>Change Theme</span>
-      <div class="btn-group">
-        <button data-toggle="light" class="switcher-btn active">Light</button>
-        <button data-toggle="dark" class="switcher-btn">Dark</button>
+    <title>Work Portfolio</title>
+  </head>
+  <body>
+    <div class="theme-panel">
+      <div class="theme-body">
+        <span>Change Theme</span>
+        <div class="btn-group">
+          <button data-toggle="light" class="switcher-btn active">Light</button>
+          <button data-toggle="dark" class="switcher-btn">Dark</button>
+        </div>
+        <button class="theme-tab">
+          <i class="fas fa-chevron-left"></i>
+        </button>
       </div>
-      <button class="theme-tab">
-        <i class="fas fa-chevron-left"></i>
-      </button>
     </div>
-  </div>
-  <main class="site-wrapper">
-    <header class="site-header">
-      <nav class="navbar">
-        <div class="brand-logo">
-          <a href="/"><h2>folio.</h2></a>
-        </div>
-        <div class="navbar-nav">
-          <ul class="ul-defaults-none main-menu">
-            <li class="nav-items" data-open="about">About Me</li>
-            <!-- <li class="nav-items" data-open="contact">Contacts</li> -->
-            <li class="nav-items"><a href="https://www.linkedin.com/in/jethro-coma-b48b20132/" target="blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li class="nav-items"><a href="https://github.com/Jefrow" target="blank"><i class="fa-brands fa-square-github"></i></a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <main class="site-wrapper">
+      <header class="site-header">
+        <nav class="navbar">
+          <div class="brand-logo">
+            <a href="/"><h2>folio.</h2></a>
+          </div>
+          <div class="navbar-nav">
+            <ul class="ul-defaults-none main-menu">
+              <li class="nav-items" data-open="about">About Me</li>
+              <!-- <li class="nav-items" data-open="contact">Contacts</li> -->
+              <li class="nav-items">
+                <a
+                  href="https://www.linkedin.com/in/jethro-coma/"
+                  target="blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="nav-items">
+                <a href="https://github.com/Jefrow" target="blank"
+                  ><i class="fa-brands fa-square-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-    <!--Hero Section-->
-    <section class="hero-bg">
-      <div class="container">
-        <div class="hero-content">
-          <div class="code-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h2 class="header-lg">Let's Create Something</h2>
-          <div class="sub-header">I create meaningful solutions for your brands and products. 
-            <br>
-            Give your customers the best experience possible. 
-          </div>
-          <div class="btn btn-primary round-pill">
-            <a href="#" data-open="about">Let's talk now</a>
+      <!--Hero Section-->
+      <section class="hero-bg">
+        <div class="container">
+          <div class="hero-content">
+            <div class="code-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h2 class="header-lg">Let's Create Something</h2>
+            <div class="sub-header">
+              I create meaningful solutions for your brands and products.
+              <br />
+              Give your customers the best experience possible.
+            </div>
+            <div class="btn btn-primary round-pill">
+              <a href="#" data-open="about">Let's talk now</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="portfolio-section">
-      <!-- <div class="container search-container">
+      <section class="portfolio-section">
+        <!-- <div class="container search-container">
         <label for="search">
           <input autocomplete="off" id="search" type="text" class="search-input" placeholder="search...">
           <i class="fas fa-search"></i>
@@ -75,260 +89,375 @@
         </ul>
       </div> -->
 
-      <div class="portfolio-grid">
+        <div class="portfolio-grid">
+          <div class="portfolio-card" data-item="web" data-open="web-1">
+            <div class="card-body">
+              <img
+                src="./assets/images/responsive_site.png"
+                alt="portfolio-icon"
+              />
+              <div class="card-popup-box">
+                <div>Web Development</div>
+                <h3>Mobile Responsive Website</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="web" data-open="web-2">
+            <div class="card-body">
+              <img src="./assets/images/coffee_page.png" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>Web Development</div>
+                <h3>Coffee Website Demo</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="web" data-open="web-3">
+            <div class="card-body">
+              <img
+                src="./assets/images/debt_free_calc.png"
+                alt="portfolio-icon"
+              />
+              <div class="card-popup-box">
+                <div>React</div>
+                <h3>Debt free calculator</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="web" data-open="web-4">
+            <div class="card-body">
+              <img
+                src="./assets/images/photo_gallery.png"
+                alt="portfolio-icon"
+              />
+              <div class="card-popup-box">
+                <div>Web Development</div>
+                <h3>Photo Portfolio Demo</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="web" data-open="web-5">
+            <div class="card-body">
+              <img src="./assets/images/simon_game.png" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>JavaScript</div>
+                <h3>JS Simon Says Game</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="web" data-open="web-6">
+            <div class="card-body">
+              <img src="./assets/images/PokeDex.png" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>API</div>
+                <h3>PokeDex</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <div class="portfolio-card" data-item="web" data-open="web-1">
-          <div class="card-body">
-            <img src="./assets/images/responsive_site.png" alt="portfolio-icon">
-            <div class="card-popup-box">
-              <div>Web Development</div>
-              <h3>Mobile Responsive Website</h3>
+      <!--Modals-->
+      <!--About Page Modal-->
+      <div
+        id="about"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>About Page</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="image-wrapper">
+              <img
+                src="./assets/images/profile-photo.jpeg"
+                alt="My Image head shot"
+              />
+            </div>
+            <div class="about-text">
+              <h2>Jethro Coma</h2>
+              <p>
+                Hello, I'm a frontend Developer based in California. I make
+                anything from landing pages to full featured websites.
+              </p>
+              <p>
+                I'm passionate about creating websites with simple and minimal
+                designs. I can take any given design and bring them to life.
+                Check out my projects and contact me if you have any questions.
+              </p>
+              <div class="contact-me-block">
+                <div>Email Me:</div>
+                <a href="mailto:jethrocoma.dev@gmail.com"
+                  >jethrocoma@gmail.com</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio-card" data-item="web" data-open="web-2">
-          <div class="card-body">
-            <img src="./assets/images/coffee_page.png" alt="portfolio-icon">
-            <div class="card-popup-box">
-              <div>Web Development</div>
-              <h3>Coffee Website Demo</h3>
-            </div>
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li><i class="fab fa-github"></i></li>
+              <li><i class="fab fa-codepen"></i></li>
+              <li><i class="fab fa-dev"></i></li>
+              <li><i class="fab fa-react"></i></li>
+              <li><i class="fab fa-vuejs"></i></li>
+              <li><i class="fa-solid fa-laptop-code"></i></li>
+              <li><i class="fab fa-node"></i></li>
+              <li><i class="fab fa-aws"></i></li>
+              <li><i class="fab fa-docker"></i></li>
+              <li><i class="fab fa-android"></i></li>
+            </ul>
           </div>
         </div>
-        <div class="portfolio-card" data-item="web" data-open="web-3">
-          <div class="card-body">
-            <img src="./assets/images/debt_free_calc.png" alt="portfolio-icon">
-            <div class="card-popup-box">
-              <div>React</div>
-              <h3>Debt free calculator</h3>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-card" data-item="web" data-open="web-4">
-          <div class="card-body">
-            <img src="./assets/images/photo_gallery.png" alt="portfolio-icon">
-            <div class="card-popup-box">
-              <div>Web Development</div>
-              <h3>Photo Portfolio Demo</h3>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-card" data-item="web" data-open="web-5">
-          <div class="card-body">
-            <img src="./assets/images/simon_game.png" alt="portfolio-icon">
-            <div class="card-popup-box">
-              <div>JavaScript</div>
-              <h3>JS Simon Says Game</h3>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-card" data-item="web" data-open="web-6">
-          <div class="card-body">
-            <img src="./assets/images/PokeDex.png" alt="portfolio-icon">
-            <div class="card-popup-box">
-              <div>API</div>
-              <h3>PokeDex</h3>
-            </div>
-          </div>
-        </div>
+      </div>
 
+      <!--Contact Page Modal-->
+      <div
+        id="contact"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>Contact PAGE</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="contact-text">
+              <h2 class="header-md">Jethro Coma</h2>
+              <div>Have a project or a question? Send me a message</div>
+              <div>I will reply within 72hours.</div>
+            </div>
+            <form class="folio-form">
+              <input
+                class="form-control"
+                name="email"
+                type="email"
+                placeholder="Email"
+              />
+              <input
+                class="form-control"
+                name="name"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="form-control"
+                name="subject"
+                type="text"
+                placeholder="Subject"
+              />
+              <textarea
+                class="form-control"
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input
+                type="submit"
+                value="Send"
+                class="btn btn-primary round-pill"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
 
-
-      </div>
-    </section>
-
-    <!--Modals-->
-    <!--About Page Modal-->
-    <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
-      <div class="container-fluid">
-        <header class="modal-header">
-          <h3>About Page</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src="./assets/images/profile-photo.jpeg" alt="My Image head shot">
-          </div>
-          <div class="about-text">
-            <h2>Jethro Coma</h2>
-            <p>Hello, I'm a frontend Developer based in California. I make anything from landing pages to full featured websites.</p>
-            <p>I'm passionate about creating websites with simple and minimal designs. I can take any given design and bring them to life. Check out my projects and contact me if you have any questions. </p>
-            <div class="contact-me-block">
-              <div>Email Me:</div>
-              <a href="mailto:jethrocoma@gmail.com">jethrocoma@gmail.com</a>
+      <!--PopUp modals-->
+      <div id="web-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>Web Development</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="image-wrapper">
+              <img
+                src=".//assets/images/responsive_site.png"
+                alt="portfolio image"
+              />
             </div>
-          </div>
-        </div>
-        <div class="marquee">
-          <ul class="marquee-content">
-            <li><i class="fab fa-github"></i></li>
-            <li><i class="fab fa-codepen"></i></li>
-            <li><i class="fab fa-dev"></i></li>
-            <li><i class="fab fa-react"></i></li>
-            <li><i class="fab fa-vuejs"></i></li>
-            <li><i class="fa-solid fa-laptop-code"></i></li>
-            <li><i class="fab fa-node"></i></li>
-            <li><i class="fab fa-aws"></i></li>
-            <li><i class="fab fa-docker"></i></li>
-            <li><i class="fab fa-android"></i></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--Contact Page Modal-->
-    <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
-      <div class="container-fluid">
-        <header class="modal-header">
-          <h3>Contact PAGE</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="contact-text">
-            <h2 class="header-md">Jethro Coma</h2>
-            <div>Have a project or a question? Send me a message</div>
-            <div>I will reply within 72hours.</div>
-          </div>
-          <form class="folio-form">
-            <input class="form-control" name="email" type="email" placeholder="Email">
-            <input class="form-control" name="name" type="text" placeholder="Name">
-            <input class="form-control" name="subject" type="text" placeholder="Subject" >
-            <textarea class="form-control" name="message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Send" class="btn btn-primary round-pill">
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!--PopUp modals-->
-    <div id="web-1" class="modal" data-animation="slideInOutTop">
-      <div class="modal-dialog">
-        <header class="modal-header">
-          <h3>Web Development</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src=".//assets/images/responsive_site.png" alt="portfolio image">
-          </div>
-          <div class="text-wrapper">
-            <p><strong>Responsive Website</strong></p>
-            <p>This is the first website that I created using only HTML and CSS. It's single page website that is mobile-responsive.</p>
-            <p>Technology: HTML, CSS, Responsive Design.</p>
-            <div class="link-btn">
-                <a href="https://jefrow.github.io/Responsive_web_page/" target="blank">See Project Here</a>
+            <div class="text-wrapper">
+              <p><strong>Responsive Website</strong></p>
+              <p>
+                This is the first website that I created using only HTML and
+                CSS. It's single page website that is mobile-responsive.
+              </p>
+              <p>Technology: HTML, CSS, Responsive Design.</p>
+              <div class="link-btn">
+                <a
+                  href="https://jefrow.github.io/Responsive_web_page/"
+                  target="blank"
+                  >See Project Here</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="web-2" class="modal" data-animation="slideInOutTop">
-      <div class="modal-dialog">
-        <header class="modal-header">
-          <h3>Web Development</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src=".//assets/images/coffee_page.png" alt="portfolio image">
-          </div>
-          <div class="text-wrapper">
-            <p><strong>Coffee Website Demo</strong></p>
-            <p>I run on coffee 24/7 and I thought it'd be fun to have my own coffee startup so I made this. This is a demo website for a potential coffee start up or e-commerce store. Features a landing page and </p>
-            <p>Technology: HTML, CSS, Responsive Design.</p>
-            <div class="link-btn">
-              <a href="https://coffee-landing-page-cp745o19t-jefrow.vercel.app/" target="blank">See Project Here</a>
+      <div id="web-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>Web Development</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="image-wrapper">
+              <img
+                src=".//assets/images/coffee_page.png"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="text-wrapper">
+              <p><strong>Coffee Website Demo</strong></p>
+              <p>
+                I run on coffee 24/7 and I thought it'd be fun to have my own
+                coffee startup so I made this. This is a demo website for a
+                potential coffee start up or e-commerce store. Features a
+                landing page and
+              </p>
+              <p>Technology: HTML, CSS, Responsive Design.</p>
+              <div class="link-btn">
+                <a
+                  href="https://coffee-landing-page-cp745o19t-jefrow.vercel.app/"
+                  target="blank"
+                  >See Project Here</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="web-3" class="modal" data-animation="slideInOutTop">
-      <div class="modal-dialog">
-        <header class="modal-header">
-          <h3>React</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src=".//assets/images/debt_free_calc.png" alt="portfolio image">
-          </div>
-          <div class="text-wrapper">
-            <p><strong>Debt-free calculator</strong></p>
-            <p>This is a loan calculator app that I build using React. It calculates your debt based on the loan principal and  interest rate. It also has the ability to track your payments. </p>
-            <p>Technology: React.</p>
-            <div class="link-btn">
-              <a href="https://jefrow.github.io/Debt-Calculator/" target="blank">See Project Here</a>
+      <div id="web-3" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>React</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="image-wrapper">
+              <img
+                src=".//assets/images/debt_free_calc.png"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="text-wrapper">
+              <p><strong>Debt-free calculator</strong></p>
+              <p>
+                This is a loan calculator app that I build using React. It
+                calculates your debt based on the loan principal and interest
+                rate. It also has the ability to track your payments.
+              </p>
+              <p>Technology: React.</p>
+              <div class="link-btn">
+                <a
+                  href="https://jefrow.github.io/Debt-Calculator/"
+                  target="blank"
+                  >See Project Here</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="web-4" class="modal" data-animation="slideInOutTop">
-      <div class="modal-dialog">
-        <header class="modal-header">
-          <h3>Web Development</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src=".//assets/images/photo_gallery.png" alt="portfolio image">
-          </div>
-          <div class="text-wrapper">
-            <p><strong>Photographer Portfolio Demo</strong></p>
-            <p>A friend of mine wanted to start a side business as a photographer. They wanted a similar layout to a specific square space theme that they found, but wasn't sure how they would like the end result. I made this multi page mock-up to show them how it could possibly look. </p>
-            <p>Technology: HTML, CSS, Responsive Design.</p>
-            <div class="link-btn">
-              <a href="https://photo-portfolio-c783xaxzn-jefrow.vercel.app/" target="blank">See Project Here</a>
+      <div id="web-4" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>Web Development</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="image-wrapper">
+              <img
+                src=".//assets/images/photo_gallery.png"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="text-wrapper">
+              <p><strong>Photographer Portfolio Demo</strong></p>
+              <p>
+                A friend of mine wanted to start a side business as a
+                photographer. They wanted a similar layout to a specific square
+                space theme that they found, but wasn't sure how they would like
+                the end result. I made this multi page mock-up to show them how
+                it could possibly look.
+              </p>
+              <p>Technology: HTML, CSS, Responsive Design.</p>
+              <div class="link-btn">
+                <a
+                  href="https://photo-portfolio-c783xaxzn-jefrow.vercel.app/"
+                  target="blank"
+                  >See Project Here</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="web-5" class="modal" data-animation="slideInOutTop">
-      <div class="modal-dialog">
-        <header class="modal-header">
-          <h3>JavaScript</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src=".//assets/images/simon_game.png" alt="portfolio image">
-          </div>
-          <div class="text-wrapper">
-            <p><strong>Simon Says Game</strong></p>
-            <p>I created this simple Simon Says game while I was learning javascript. This game won't win any awards, but it will challenge your memory. If you haven't played simon says before, every level builds from the previous level so remember to input the whole pattern every level. Do you think you can get past level 10? Good luck!</p>
-            <p>Technology: JavaScript, HTML, CSS.</p>
-            <div class="link-btn">
-              <a href="https://jefrow.github.io/Simon_Game/" target="blank">See Project Here</a>
+      <div id="web-5" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>JavaScript</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="image-wrapper">
+              <img
+                src=".//assets/images/simon_game.png"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="text-wrapper">
+              <p><strong>Simon Says Game</strong></p>
+              <p>
+                I created this simple Simon Says game while I was learning
+                javascript. This game won't win any awards, but it will
+                challenge your memory. If you haven't played simon says before,
+                every level builds from the previous level so remember to input
+                the whole pattern every level. Do you think you can get past
+                level 10? Good luck!
+              </p>
+              <p>Technology: JavaScript, HTML, CSS.</p>
+              <div class="link-btn">
+                <a href="https://jefrow.github.io/Simon_Game/" target="blank"
+                  >See Project Here</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="web-6" class="modal" data-animation="slideInOutTop">
-      <div class="modal-dialog">
-        <header class="modal-header">
-          <h3>API</h3>
-          <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-          <div class="image-wrapper">
-            <img src=".//assets/images/PokeDex.png" alt="portfolio image">
-          </div>
-          <div class="text-wrapper">
-            <p><strong>PokeDex</strong></p>
-            <p>Probably one of the funnest projects I've worked on to date while learning about APIs. This pokedex was build using data fetched from pokeApi. Each pokemon stat is displayed in a card style format. You can add and remove pokemon from a "favorites" list and is sortable. </p>
-            <p>Technology: API, HTML, CSS, JavaScript, Responsive Design.</p>
-            <div class="link-btn">
-              <a href="https://jefrow.github.io/pokeDex/" target="blank">See Project Here</a>
+      <div id="web-6" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>API</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="image-wrapper">
+              <img src=".//assets/images/PokeDex.png" alt="portfolio image" />
+            </div>
+            <div class="text-wrapper">
+              <p><strong>PokeDex</strong></p>
+              <p>
+                Probably one of the funnest projects I've worked on to date
+                while learning about APIs. This pokedex was build using data
+                fetched from pokeApi. Each pokemon stat is displayed in a card
+                style format. You can add and remove pokemon from a "favorites"
+                list and is sortable.
+              </p>
+              <p>Technology: API, HTML, CSS, JavaScript, Responsive Design.</p>
+              <div class="link-btn">
+                <a href="https://jefrow.github.io/pokeDex/" target="blank"
+                  >See Project Here</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-  </main>
-  <script src="./js/index.js"></script>
-</body>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
